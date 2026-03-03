@@ -8,16 +8,16 @@ const propertyConfig = {
     title: "Casa Remodelada en Venta - Polo Club, Bogotá | 204m²",
     description: "Excelente oportunidad. Casa de 204.79 m² en el barrio Polo Club, Bogotá. 5 habitaciones, 4 baños, 3 parqueaderos, patio automatizado y seguridad.",
     keywords: "Casa en Venta, Polo Club, Bogotá, Barrios Unidos, Casa Remodelada, Bienes Raíces",
-    ogUrl: "",
-    ogImage: "assets/portada.png",
+    ogUrl: "https://vecy-bienes-raices.github.io/Casa-Polo-Club-Bogot-/",
+    ogImage: "assets/1.jpg",
     author: "Vecy Bienes Raíces", 
     copyright: "2026"
   },
   
   // 2. Encabezado Principal
   infoPrincipal: {
-    headerBadge: "Oportunidad de Inversión 🏡",
-    tituloHtml: "CASA EN VENTA - BARRIO POLO CLUB, BOGOTÁ",
+    headerBadge: "🔑 Compra Hoy Tu Fortaleza Urbana 🏡",
+    tituloHtml: "CASA DE BARRIO EN POLO CLUB BOGOTÁ",
     precioVenta: "$1.150.000.000",
     valorAdmin: "No aplica",
     labelExtra: "💵 Administración"
@@ -79,14 +79,17 @@ const propertyConfig = {
 
   // 8. Multimedia
   multimedia: {
-    videoUrl: "", 
-    videoThumbnail: "assets/portada.png",
-    imagesCount: 0, 
+    videoUrl: "assets/video-casa-polo.mp4", 
+    videoThumbnail: "assets/1.jpg", // Usa la primera imagen como portada del video
+    imagesCount: 42, 
     imagePrefix: "assets/",
-    imageExtension: ".jpeg",
+    imageExtension: ".jpg",
     imagesList: [
-      // Añade las rutas de tus fotos aquí una vez las subas a /assets
-      // "assets/1.jpeg", "assets/2.jpeg", etc...
+      "assets/1.jpg", "assets/2.jpg", "assets/3.jpg", "assets/4.jpg", "assets/5.jpg", "assets/6.jpg", "assets/7.jpg", "assets/8.jpg", "assets/9.jpg", "assets/10.jpg",
+      "assets/11.jpg", "assets/12.jpg", "assets/13.jpg", "assets/14.jpg", "assets/15.jpg", "assets/16.jpg", "assets/17.jpg", "assets/18.jpg", "assets/19.jpg", "assets/20.jpg",
+      "assets/21.jpg", "assets/22.jpg", "assets/23.jpg", "assets/24.jpg", "assets/25.jpg", "assets/26.jpg", "assets/27.jpg", "assets/28.jpg", "assets/29.jpg", "assets/30.jpg",
+      "assets/31.jpg", "assets/32.jpg", "assets/33.jpg", "assets/34.jpg", "assets/35.jpg", "assets/36.jpg", "assets/37.jpg", "assets/38.jpg", "assets/39.jpg", "assets/40.jpg",
+      "assets/41.jpg", "assets/42.jpg"
     ]
   },
 
@@ -103,6 +106,6 @@ const propertyConfig = {
 ✨ *Destacado:* Completamente remodelada, patio cubierto automatizado, chimenea, circuito cerrado de cámaras.
 
 🔗 *Ver Fotos y Detalles:*
-https://tu-dominio-aqui.com/`
+https://vecy-bienes-raices.github.io/Casa-Polo-Club-Bogot-/`
   }
 };
