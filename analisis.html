@@ -193,8 +193,11 @@
     </div>
 
     <div class="glass-card">
-      <h1>Detalles de la Propiedad</h1>
-      <p style="text-align: center; font-weight: bold; color: #666; margin-bottom: 30px;">CASA EN VENTA - POLO CLUB, BOGOTÁ <br> <span id="web-ref" style="color: #d4af37; font-size: 0.9em;"></span></p>
+      <div style="text-align: right; color: #d4af37; font-weight: bold; font-size: 14px; margin-bottom: 10px;">
+        REF: <span id="prop-id-display">ID-BOG-PC01</span>
+      </div>
+      <h1>Ficha Técnica del Inmueble</h1>
+      <p style="text-align: center; font-weight: bold; color: #666; margin-bottom: 30px;">CASA EN VENTA - POLO CLUB, BOGOTÁ</p>
 
       <h2>1. Ficha Técnica y Dimensiones</h2>
       <ul>
@@ -341,7 +344,7 @@
 
     <script>
       // Inyectar REF dinámico
-      document.getElementById('web-ref').innerText = 'REF: ' + propertyConfig.seo.propertyId;
+      document.getElementById('prop-id-display').innerText = propertyConfig.seo.propertyId;
       document.getElementById('pdf-ref').innerText = propertyConfig.seo.propertyId;
 
       function downloadPDF() {
