@@ -11,7 +11,8 @@ const propertyConfig = {
     ogUrl: "https://casa-polo-club-bogota.netlify.app/",
     ogImage: "assets/1.jpg",
     author: "Vecy Bienes Raíces", 
-    copyright: "2026"
+    copyright: "2026",
+    propertyId: "PC-2026"
   },
   
   // 2. Encabezado Principal
