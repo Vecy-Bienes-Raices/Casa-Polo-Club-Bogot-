@@ -12,7 +12,7 @@ const propertyConfig = {
     ogImage: "assets/1.jpg",
     author: "Vecy Bienes Raíces", 
     copyright: "2026",
-    propertyId: "PC-2026"
+    propertyId: "VECY-PC-01"
   },
   
   // 2. Encabezado Principal
