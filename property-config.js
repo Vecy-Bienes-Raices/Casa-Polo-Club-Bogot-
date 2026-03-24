@@ -1,5 +1,5 @@
 /**
- * 🌍 CONFIGURACIÓN UNIVERSAL VECY - CASA POLO CLUB
+ * 🌍 CONFIGURACIÓN UNIVERSAL - CASA POLO CLUB
  */
 
 const propertyConfig = {
@@ -12,7 +12,7 @@ const propertyConfig = {
     ogImage: "assets/1.jpg",
     author: "Vecy Bienes Raíces", 
     copyright: "2026",
-    propertyId: "VECY-PC-01"
+    propertyId: "ID-BOG-PC01"
   },
   
   // 2. Encabezado Principal
