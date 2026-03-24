@@ -17,6 +17,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Librería para PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     
     <style>
       /* Reutilizando estilos de la plantilla principal */
@@ -76,10 +78,83 @@
         h1 { font-size: 22px; }
         .finance-table { font-size: 12px; }
       }
+
+      /* Estilos para el PDF Template */
+      #pdf-template {
+        display: none;
+        background: white;
+        padding: 40px;
+        color: #333;
+        font-family: 'Outfit', sans-serif;
+      }
+      .pdf-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 3px solid #d4af37;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+      }
+      .pdf-logo { font-size: 24px; font-weight: 800; color: #3e2723; }
+      .pdf-section { margin-bottom: 25px; }
+      .pdf-section h2 { 
+        font-size: 18px; 
+        color: #8b7355; 
+        border-bottom: 1px solid #eee; 
+        padding-bottom: 5px; 
+      }
+      .pdf-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin-top: 10px;
+      }
+      .pdf-item { font-size: 14px; margin-bottom: 5px; }
+      .pdf-gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-top: 20px;
+      }
+      .pdf-gallery img {
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+      }
+      .pdf-footer {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 12px;
+        color: #999;
+        border-top: 1px solid #eee;
+        padding-top: 20px;
+      }
+      .btn-download {
+        background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+      }
+      .btn-download:hover { transform: translateY(-2px); box-shadow: 0 6px 12px rgba(0,0,0,0.2); }
     </style>
   </head>
   <body>
-    <a href="index.html" class="btn-back">⬅ Volver a la Ficha Principal</a>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+      <a href="index.html" class="btn-back" style="margin-bottom: 0;">⬅ Volver a la Ficha</a>
+      <button onclick="downloadPDF()" class="btn-download">
+        📄 DESCARGAR PDF
+      </button>
+    </div>
 
     <div class="glass-card">
       <h1>Detalles de la Propiedad</h1>
@@ -142,6 +217,83 @@
            ⬅ Volver a Ficha Principal
         </a>
       </div>
+      </div>
     </div>
+
+    <!-- Template oculto para el PDF -->
+    <div id="pdf-template">
+      <div class="pdf-header">
+        <div class="pdf-logo">VECY BIENES RAÍCES</div>
+        <div style="text-align: right;">
+          <div style="font-weight: 700; color: #d4af37;">FICHA TÉCNICA - POLO CLUB</div>
+          <div style="font-size: 12px;">Ref: PC-2026</div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-bottom: 30px;">
+        <h1 style="color: #3e2723; margin-bottom: 5px;">CASA DE BARRIO EN POLO CLUB</h1>
+        <p style="color: #8b7355; font-weight: 700; font-size: 1.2em;">Precio: $1.250.000.000 COP</p>
+      </div>
+
+      <div class="pdf-grid">
+        <div class="pdf-section">
+          <h2>Detalles Clave</h2>
+          <div class="pdf-item"><strong>• Área Total:</strong> 204,79 m²</div>
+          <div class="pdf-item"><strong>• Habitaciones:</strong> 5 + Servicio</div>
+          <div class="pdf-item"><strong>• Baños:</strong> 4</div>
+          <div class="pdf-item"><strong>• Parqueaderos:</strong> 3</div>
+          <div class="pdf-item"><strong>• Estrato:</strong> 4</div>
+        </div>
+        <div>
+          <img src="assets/1.jpg" style="width: 100%; border-radius: 12px; border: 2px solid #eee;" />
+        </div>
+      </div>
+
+      <div class="pdf-section">
+        <h2>Características Destacadas</h2>
+        <p style="font-size: 14px; text-align: left;">
+          Casa completamente remodelada con patio cubierto automatizado, chimenea, 3 parqueaderos y sistema de seguridad 360°. Ubicación estratégica cerca de la Autopista Norte y Calle 80.
+        </p>
+      </div>
+
+      <div class="pdf-section">
+        <h2>Galería de Imágenes Seleccionadas</h2>
+        <div class="pdf-gallery">
+          <img src="assets/2.jpg" />
+          <img src="assets/4.jpg" />
+          <img src="assets/10.jpg" />
+          <img src="assets/15.jpg" />
+          <img src="assets/20.jpg" />
+          <img src="assets/25.jpg" />
+          <img src="assets/30.jpg" />
+          <img src="assets/35.jpg" />
+          <img src="assets/42.jpg" />
+        </div>
+      </div>
+
+      <div class="pdf-footer">
+        <p>Contacto: Vecy Bienes Raíces | www.vecibienesraices.com</p>
+        <p>Generado comercialmente para información de clientes.</p>
+      </div>
+    </div>
+
+    <script>
+      function downloadPDF() {
+        const element = document.getElementById('pdf-template');
+        element.style.display = 'block'; // Mostrar temporalmente para capturar
+
+        const opt = {
+          margin: [10, 10],
+          filename: 'Ficha_Tecnica_Polo_Club_Vecy.pdf',
+          image: { type: 'jpeg', quality: 0.98 },
+          html2canvas: { scale: 2, useCORS: true },
+          jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+        };
+
+        html2pdf().set(opt).from(element).save().then(() => {
+          element.style.display = 'none'; // Volver a ocultar
+        });
+      }
+    </script>
   </body>
 </html>
