@@ -175,6 +175,7 @@
         transition: all 0.3s ease;
       }
       .btn-download:hover { transform: translateY(-2px); box-shadow: 0 6px 12px rgba(0,0,0,0.2); }
+      #pdf-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 15px rgba(0,0,0,0.4); }
     </style>
   </head>
   <body>
@@ -187,7 +188,20 @@
     </div>
     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
       <a href="index.html" class="btn-back" style="margin-bottom: 0;">⬅ Volver a la Ficha</a>
-      <button onclick="downloadPDF()" class="btn-download">
+      <button onclick="downloadPDF()" id="pdf-btn" style="
+        background: linear-gradient(135deg, #d4af37, #b8860b);
+        color: white;
+        padding: 12px 25px;
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: transform 0.2s;
+      ">
         📄 DESCARGAR PDF
       </button>
     </div>
@@ -243,7 +257,7 @@
 
       <h2>5. Condiciones Comerciales</h2>
       <ul>
-        <li><strong>Precio de Oportunidad:</strong> <span class="highlight">$1.250.000.000 COP</span> <span class="strikethrough">$1.350.000.000 COP</span></li>
+        <li><strong>Precio de Oportunidad:</strong> <span class="highlight">$1.300.000.000 COP</span> <span class="strikethrough">$1.350.000.000 COP</span></li>
         <li><strong>Inmueble Saneado:</strong> Listo para traspaso. Excelente oportunidad para vivienda o inversión comercial debido a su estratégica ubicación.</li>
       </ul>
 
@@ -271,7 +285,7 @@
 
       <div style="text-align: center; margin-bottom: 30px;">
         <h1 style="color: #3e2723; margin-bottom: 5px; font-size: 24px;">CASA REMODELADA EN POLO CLUB</h1>
-        <p style="color: #8b7355; font-weight: 700; font-size: 1.4em;">Precio: $1.250.000.000 COP</p>
+        <p style="color: #8b7355; font-weight: 700; font-size: 1.4em;">Precio: $1.300.000.000 COP</p>
       </div>
 
       <div class="pdf-grid">
