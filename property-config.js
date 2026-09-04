@@ -9,7 +9,7 @@ const propertyConfig = {
     description: "Excelente oportunidad. Casa de 204.79 m² en el barrio Polo Club, Bogotá. 5 habitaciones, 4 baños, 3 parqueaderos, patio automatizado y seguridad.",
     keywords: "Casa en Venta, Polo Club, Bogotá, Barrios Unidos, Casa Remodelada, Bienes Raíces",
     ogUrl: "https://casa-polo-club-bogota.netlify.app/",
-    ogImage: "https://casa-polo-club-bogota.netlify.app/assets/og-cover.jpg",
+    ogImage: "https://casa-polo-club-bogota.netlify.app/assets/1.jpg",
     author: "Vecy Bienes Raíces", 
     copyright: "2026",
     propertyId: "ID-BOG-POLO01"
@@ -107,6 +107,6 @@ const propertyConfig = {
 ✨ *Destacado:* Completamente remodelada, patio cubierto automatizado, chimenea, circuito cerrado de cámaras.
 
 🔗 *Ver Fotos y Detalles:*
-https://casa-polo-club-bogota.netlify.app/?ref=polo`
+https://casa-polo-club-bogota.netlify.app/`
   }
 };
