@@ -12,14 +12,14 @@ const propertyConfig = {
     ogImage: "assets/1.jpg",
     author: "Vecy Bienes Raíces", 
     copyright: "2026",
-    propertyId: "ID-BOG-PC01"
+    propertyId: "ID-BOG-POLO01"
   },
   
   // 2. Encabezado Principal
   infoPrincipal: {
     headerBadge: "🔑 Compra Hoy Tu Fortaleza Urbana 🏡",
     tituloHtml: "CASA DE BARRIO EN POLO CLUB BOGOTÁ",
-    precioVenta: "<span style='text-decoration: line-through; font-size: 0.7em; opacity: 0.9; display: block;'>Antes: $1.350.000.000</span><span style='color: #FFD700; font-size: 1.2em; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);'>Hoy: $1.300.000.000</span>",
+    precioVenta: "<span style='text-decoration: line-through; font-size: 0.7em; opacity: 0.9; display: block;'>Antes: $1.400.000.000</span><span style='color: #FFD700; font-size: 1.2em; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);'>Hoy: $1.300.000.000</span>",
     valorAdmin: "No aplica",
     labelExtra: "💵 Administración"
   },
@@ -69,10 +69,10 @@ const propertyConfig = {
     texto: `
     <div class="roi-item">
       <p><strong>Antigüedad y Solidez:</strong> 40 años de sólida construcción, actualizada con estándares modernos.</p>
-      <p><strong>Precio Reducido:</strong> Bajó de $1.350.000.000 COP a $1.300.000.000 COP.</p>
+      <p><strong>Precio Reducido:</strong> Bajó de $1.400.000.000 COP a $1.300.000.000 COP.</p>
       <div style="margin-top: 30px; text-align: center;">
-          <a href="analisis.html" class="btn-analisis">
-             📋 VER MÁS DETALLES DE LA CASA
+          <a href="ficha-tecnica.html" class="btn-analisis">
+             📋 VER BROCHURE TÉCNICO COMPLETO
           </a>
       </div>
     </div>`
@@ -98,7 +98,7 @@ const propertyConfig = {
   share: {
     whatsappText: `🏡 *CASA EN VENTA - POLO CLUB, BOGOTÁ*
 
-💰 *Precio:* Antes: ~$1.350.000.000~ | Hoy: *$1.300.000.000 COP*
+💰 *Precio:* Antes: ~$1.400.000.000~ | Hoy: *$1.300.000.000 COP*
 📍 *Ubicación:* Barrio Polo Club, Barrios Unidos
 📐 *Área Total:* 204,79 m²
 🛏️ *Habitaciones:* 5 + Servicio | 🚿 *Baños:* 4
